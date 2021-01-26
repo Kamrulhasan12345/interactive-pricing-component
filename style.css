@@ -54,10 +54,21 @@ p {
 }
 
 .card__top {
-  border-bottom: 1px solid hsl(223, 50%, 87%);
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: auto auto auto auto;
   padding: 40px 20px;
+  border-bottom: 1px solid hsl(223, 50%, 87%);
+}
+
+#pg__amount {
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .card__bottom {
   padding: 40px 20px;
 }
+
