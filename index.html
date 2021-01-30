@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
@@ -23,15 +23,15 @@
 </head>
 <body>
   <div class="head-wrapper"><div class="head"><h1 class="h1__head">Simple, traffic-based pricing</h1>
-  <p>Sign-up for our 30-day trial. </p><p>No credit card required.</p></div></div> 
+  <p>Sign-up for our 30-day trial. No credit card required.</p></div></div> 
   <div class="card">
     <div class="card__top">
       <p id="pg__amount"><span>100K</span> PAGEVIEWS</p>
-      <div class="slider"></div>
+      <input id="slider" class="slider" type="range" min="1" max="5">
       <div class="pricing__bar"><span>$<span id="price">16</span></span>/month</div>
 
-      <div class="payment__type">Monthly Billing
-  Yearly Billing 25% discount</div>
+      <div class="payment__type">Monthly Billing<span id="toggle"></span>
+  Yearly Billing <!--25% discount--></div>
     </div>
   
     <div class="card__bottom">
@@ -45,7 +45,10 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mohammad Kamrul Hasan</a>.
   </div>
+  
+  <!-- Scripts -->
+  <script src="./script.js"></script>
 </body>
 </html>
