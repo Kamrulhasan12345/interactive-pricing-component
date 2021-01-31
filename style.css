@@ -33,14 +33,17 @@ p {
 .head-wrapper {
   text-align: center;
   background: url('./images/pattern-circles.svg') no-repeat;
-  background-position-x: 55%;
+  background-position-x: 50%;
   background-position-y: 0%;
   padding: 35px 20px 45px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-.head-wrapper p {
+.head-wrapper .head p {
   padding-bottom: 5px;
+  width: 180px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .card {
@@ -52,7 +55,7 @@ p {
   justify-self: center;
   border-radius: 10px;
   text-align: center;
-  margin-top: -25px;
+  margin-top: 10px;
   box-shadow: 5px 30px 500px hsl(223, 15%, 87%);
 }
 
@@ -189,6 +192,18 @@ transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.card__top p {
-  margin-bottom: 35px;
+.card__top p, input {
+  margin-bottom: 40px;
+}
+
+.pricing__bar span {
+  font-size: 30px;
+  font-weight: bold;
+  color: hsl(227, 35%, 25%);
+  margin-right: 4px;
+}
+
+.pricing__bar p {
+  display: inline;
+  padding: inherit;
 }
