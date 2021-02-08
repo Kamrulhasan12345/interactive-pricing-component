@@ -203,7 +203,8 @@ transition: all 0.5s ease-in-out;
   margin-right: 4px;
 }
 
-.pricing__bar p {
-  display: inline;
-  padding: inherit;
+.pricing__bar sp {
+  position: absolute;
+  display: inline-block;
+  margin-bottom: -10px;
 }

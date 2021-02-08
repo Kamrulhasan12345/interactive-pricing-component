@@ -17,22 +17,23 @@ list_value = {
 };
 
 slider = document.getElementById("slider");
-amnt =document.getElementById("amnt");
+//var amnt =document.getElementById("amnt");
 
 function updatePrice() {
-  if (this.value === 8) {
-    amnt.innerHTML = list_value.value[0];
+  var amnt =document.getElementById("amnt");
+  if (this.value === "8") {
+    amnt.innerHTML = "10K";
   }
   else if (this.value === 12) {
-    amnt.innerHTML = list_value.value[1];
+    amnt.innerHTML = "50K";
   }
   else if (this.value === 16) {
-    amnt.innerHTML = list_value.value[2];
+    amnt.innerHTML = "100K";
   }
   else if (this.value === 24) {
-    amnt.innerHTML = list_value.value[3];
+    amnt.innerHTML = "500K";
   }
   else if (this.value === 36) {
-    amnt.innerHTML = list_value.value[4];
+    amnt.innerHTML = "1M";
   }
 }
