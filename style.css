@@ -8,7 +8,7 @@
 body {
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: visible;
   color: hsl(225, 20%, 60%);
   display: grid;
   grid-template-rows: auto auto auto;
@@ -55,7 +55,7 @@ p {
   justify-self: center;
   border-radius: 10px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
   box-shadow: 5px 30px 500px hsl(223, 15%, 87%);
 }
 
@@ -64,7 +64,7 @@ p {
   grid-template-columns: none;
   grid-template-rows: auto auto auto auto;
   padding: 40px 20px;
-  border-bottom: 1px solid hsl(223, 50%, 87%);
+  border-bottom: 1px solid hsl(224, 65%, 95%);
 }
 
 #pg__amount {
@@ -266,4 +266,52 @@ input:checked + .toggle:before {
 .payment__type {
   padding-top: 35px;
   font-size: 12px;
+  margin-left: 7px;
+}
+
+.payment__type:after {
+  content: "-25%";
+  position: relative;
+  background: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  padding: 2px 7px;
+  margin-left: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 34px;
+}
+
+.feat {
+  list-style: none;
+  font-size: 12px;
+}
+
+.feat li {
+  padding-bottom: 10px;
+}
+
+.feat li img {
+  margin-right: 15px;
+}
+
+.btn {
+  padding: 11px 43px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 34px;
+  color: hsl(226, 100%, 87%);
+  background: hsl(227, 35%, 25%);
+}
+
+.btn:focus, .btn:hover {
+  color: #fff;
 }
