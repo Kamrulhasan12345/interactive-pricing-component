@@ -63,7 +63,7 @@ p {
   display: grid;
   grid-template-columns: none;
   grid-template-rows: auto auto auto auto;
-  padding: 40px 20px;
+  padding: 40px 10px;
   border-bottom: 1px solid hsl(224, 65%, 95%);
 }
 
@@ -79,7 +79,8 @@ p {
 }
 
 .slider {
-  width: 100%;
+  width: 90%;
+  justify-self: center;
   height: 8px!important;
   -webkit-appearance: none;
   /* overflow: hidden; */
@@ -266,7 +267,7 @@ input:checked + .toggle:before {
 .payment__type {
   padding-top: 35px;
   font-size: 12px;
-  margin-left: 7px;
+  margin-left: 25px;
 }
 
 .payment__type:after {
