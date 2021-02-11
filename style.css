@@ -10,10 +10,10 @@ body {
   height: 100vh;
   overflow: visible;
   color: hsl(225, 20%, 60%);
-  display: grid;
+  display: flex;
   grid-template-rows: auto auto auto;
   grid-template-columns: none;
-  justify-items: space-between;
+  justify-items: space-evenly;
   align-items: center!important;
   flex-direction: column;
   background: url('./images/bg-pattern.svg') no-repeat;
@@ -35,8 +35,8 @@ p {
   background: url('./images/pattern-circles.svg') no-repeat;
   background-position-x: 50%;
   background-position-y: 0%;
-  padding: 35px 20px 45px;
-  margin-top: 30px;
+  padding: 35px 40px 60px;
+  margin-top: 65px;
 }
 
 .head-wrapper .head p {
@@ -55,7 +55,7 @@ p {
   justify-self: center;
   border-radius: 10px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 25px;
   box-shadow: 0px 5px 30px hsl(223, 15%, 87%);
 }
 
@@ -336,11 +336,60 @@ input:checked + .toggle:before {
     width: 330px;
   }
 
+  .card {
+    width: 450px;
+    
+  }
+
   .card__top {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
+    padding: 40px 35px;
+  }
+
+  #pg__amount {
+    text-align: left;
+    margin: auto 0;
   }
 
   .pricing__bar {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: right;
+  }
 
+  .slider {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 50px;
+  }
+
+  .payment__type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .payment__type:after {
+    content: "25% discount";
+  }
+
+  .card__bottom {
+    grid-template-columns: auto auto;
+    padding: 30px 35px;
+    display: grid;
+  }
+
+  .feat {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 15px 50px;
+    margin: auto;
   }
 }
